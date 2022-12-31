@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Information</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='design1.css')}}">
+</head>
+<header>
+	<font color="black" size="4" style="font-family: avenir">
+	<nav>
+		<ul class="headdesign">
+			<li><a href="/"><b>Add Employee</b></a></li>
+			<li><a href="/fetchdata"><b>Get Employee</b></a></li>
+			<li><a href="/about"><b>About Us</b></a></li>
+		</ul>
+	</nav>
+</font>
+</header>	
+<center>
+	<font color="black" size="5" style="font-family: avenir">
+
+		<h1 style="color: DodgerBlue;margin:1.5% 0 1% 0;">Employee Information</h1>
+
+		<body bgcolor="white">
+
+			<form>
+
+				<div>
+
+			  		Employee ID:<br> {{ searchResult[0] }} <br><br>
+
+			  		First Name:<br> {{ searchResult[1] }} <br><br>
+
+			  		Last Name:<br> {{ searchResult[2] }} <br><br>
+
+			  		Primary Interest:<br> {{ searchResult[3] }} <br><br>
+
+			  		Location:<br> {{ searchResult[4] }} <br><br>
+
+			  		<button type="submit" style=" height: 45px; width: 200px; color:white; font:oblique;margin:1% 0 1% 0 " formaction="http://18.212.68.246:80/fetchdata">RESET</button><br><br>
+
+			  	</div>
+
+			</form>
+
+		</body>
+		<div class="footer-sec">
+            <footer>
+                <div class="container">
+                    <p class="copyright">BAIT 3273 © 2022</p>
+                </div>
+            </footer> 
+        </div>   
+	</font>
+</center>
+</html>

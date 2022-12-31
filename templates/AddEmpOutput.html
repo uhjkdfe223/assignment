@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<font color="black" size="4" style="font-family: avenir">
+	
+	<header>
+		<nav>
+			<ul class="headdesign">
+				<li><a href="/"><b>Add Employee</b></a></li>
+				<li><a href="/fetchdata"><b>Get Employee</b></a></li>
+				<li><a href="/about"><b>About Us</b></a></li>
+			</ul>
+		</nav>
+	</header>
+	</font>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='design1.css')}}">
+<center>
+	<font color="DodgerBlue" size="5" style="font-family: avenir">
+		<body bgcolor="white">
+			<h1 style="margin:5% 0 0 0">SAVE SUCCESSFUL</h1><br>
+			<h2 style="margin-top: 3%;">Following Employee has been added to the database</h2><br>
+			<h2 style="margin-top: 2%;margin-bottom: 2%;">{{ name }}</h2><br>
+			<title>Add Emp Output</title>
+				<form action="http://18.212.68.246:80/" autocomplete="on" method = "GET">
+
+					<button type="submit" style="height: 45px; width: 200px; color:white; font:oblique;">GO BACK</button><br><br>
+
+				</form>
+		</body>
+
+				<div class="footer-sec" style="margin-top: 5%;">
+            <footer>
+                <div class="container">
+                    <p class="copyright">BAIT 3273 © 2022</p>
+                </div>
+            </footer> 
+        </div>  
+	</font>
+</center>
+</head>
+<body>
+
+</body>
+</html>

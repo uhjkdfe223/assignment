@@ -1,0 +1,6 @@
+customhost = "assignment.c25g0ievu2nk.us-east-1.rds.amazonaws.com"
+customuser = "aws_user"
+custompass = "Cloud123"
+customdb = "employee"
+custombucket = "limputhern-bucket"
+customregion = "us-east-1a"

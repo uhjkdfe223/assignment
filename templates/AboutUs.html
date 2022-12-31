@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='design.css')}}">
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="headdesign">
+                    <li><a href="/"><b>Add Employee</b></a></li>
+                    <li><a href="/fetchdata"><b>Get Employee</b></a></li>
+                    <li><a href="/about"><b>About Us</b></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="team-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h1> ABOUT US </h1>
+                        <p>Our team information is below.</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="flip-card">
+                        <div class="card-inner">
+                            <div class="card">
+                                <img src="{{ url_for('static', filename='patrick.png')}}"/>
+                                <h3><b>Lim Pu Thern</b></h3>
+                                <h4>Team member</h4>                           
+                            </div>
+                            <div class="card-back">                          
+                                <img src="{{ url_for('static', filename='lpt.jpeg')}}"/>                                                     
+                                <h3><b>RIS2Y2G2</b></h3>
+                                <h4>Nice to meet u!</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="card-inner">
+                            <div class="card">
+                                <img src="{{ url_for('static', filename='jiale.png')}}"/>                          
+                                <h3><b>Toh Jia Le</b></h3>
+                                <h4>Team Leader</h4>                                                    
+                            </div>
+                            <div class="card-back">                            
+                                    <img src="{{ url_for('static', filename='ljl.jpeg')}}"/>                                                        
+                                    <h3><b>RIS2Y2G2</b></h3>
+                                    <h4>Nice to meet u!</h4>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="card-inner">
+                            <div class="card">   
+                                <img src="{{ url_for('static', filename='arlene.png')}}"/>
+                                <h3><b>Loh Xin Yi</b></h3>
+                                <h4>Team member</h4>
+                            </div>
+                            <div class="card-back">
+                                <img src="{{ url_for('static', filename='lxy.jpeg')}}"/>
+                                <h3><b>RIS2Y2G1</b></h3>
+                                <h4>Nice to meet u!</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer-sec">
+            <footer>
+                <div class="container">
+                    <p class="copyright">BAIT 3273 © 2022</p>
+                </div>
+            </footer> 
+        </div>   
+    </body>
+    
+</html>
